@@ -6,8 +6,8 @@ st.set_page_config(page_title="Excel Plotter")
 st.title("Excel Plotter")
 st.subheader("I'm hungry, feed me an Excel file!")
 
-upload_file = st.file_uploader('What is on the menu?', type='xlsx')
-if uploaded_file:
+ExcelFile = st.file_uploader('What is on the menu?', type='xlsx')
+if ExcelFile:
   st.markdown('---')
   df = pd.read_excel(uploaded_file, engine='openpyxl')
   st.dataframe
