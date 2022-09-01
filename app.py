@@ -38,7 +38,7 @@ if ExcelFile:
   NormBins = np.arange(0,upperLim+step,step/10)
   FittedNormal = Normal(NormBins, mean, std)
   
-  fig = plt.figure(figsize=(10,6))
+  fig = plt.figure(figsize=(8,5))
   plt.plot(NormBins, FittedNormal, color="purple")
   plt.bar(centers, counts/np.sum(counts)*2, width=0.4)
   plt.xlabel('Log10(Losses)')
