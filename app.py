@@ -7,5 +7,8 @@ st.title("Excel Plotter")
 st.subheader("I'm hungry, feed me an Excel file!")
 
 upload_fule = st.file_uploader('What is on the menu?', type='xlsx')
-
+if uploaded_file:
+  st.markdown('---')
+  df = pd.read_excel(uploaded_file, engine='openpyxl')
+  st.dataframe
 
