@@ -46,3 +46,6 @@ if ExcelFile:
   plt.legend(['Fit','Data'])
   plt.title('A nice little graph')
   st.pyplot(fig)
+
+  if st.button("Run"):
+    print("test")
