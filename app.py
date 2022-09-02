@@ -15,7 +15,7 @@ if ExcelFile:
   st.dataframe(df)
   
 
-if st.button("Run"):
+if st.button("Fit Lognormal"):
   try:
     df['Total'] = df['Paid Indem'] + df['Paid Expense'] + df['OS Indem'] + df['OS Expense']
     df0 = df[df['Total']>0]
