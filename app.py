@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 st.set_page_config(page_title="Nathan's Frontend ;)")
-st.title("Nathan's Frontend ;)")
+st.title("Hi :)")
 st.subheader("I'm hungry, feed me an Excel file!")
 
 ExcelFile = st.file_uploader('What is on the menu?', type='xlsx')
