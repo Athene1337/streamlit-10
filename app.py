@@ -17,8 +17,6 @@ if ExcelFile:
 
 if st.button("Fit Lognormal"):
   try:
-    st.write("Lognormal Parameters:")
-    st.write(r''' $$\mu$$'''+":  "+str(np.round(mean,3))+" , "+r'''$$\sigma$$'''+":  "+str(np.round(std,3)))
     
     df['Total'] = df['Paid Indem'] + df['Paid Expense'] + df['OS Indem'] + df['OS Expense']
     df0 = df[df['Total']>0]
@@ -40,6 +38,9 @@ if st.button("Fit Lognormal"):
       return (np.exp(-((x-mu)**2)/(2*sig**2))/np.sqrt(2*np.pi*sig**2))
     mean = np.mean(LogLosses) 
     std = np.std(LogLosses)
+    
+    st.write("Lognormal Parameters:")
+    st.write(r''' $$\mu$$'''+":  "+str(np.round(mean,3))+" , "+r'''$$\sigma$$'''+":  "+str(np.round(std,3)))
 
     NormBins = np.arange(0,upperLim+step,step/10)
     FittedNormal = Normal(NormBins, mean, std)
