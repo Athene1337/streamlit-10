@@ -4,8 +4,8 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.set_page_config(page_title="Nathan's Frontend Prototype1")
-st.title("Excel Plotter")
+st.set_page_config(page_title="Hi :)")
+st.title("Nathan's Frontend Prototype1")
 st.subheader("I'm hungry, feed me an Excel file!")
 
 ExcelFile = st.file_uploader('What is on the menu?', type='xlsx')
