@@ -14,10 +14,9 @@ if ExcelFile:
   df = pd.read_excel(ExcelFile, engine='openpyxl')
   st.dataframe(df)
   
-test = st.button("Run")
-st.write(test)
 
-#if st.button("Run"):
+if st.button("Run"):
+  st.write("I feel pressed")
 #  try:
     #df['Total'] = df['Paid Indem'] + df['Paid Expense'] + df['OS Indem'] + df['OS Expense']
     #df0 = df[df['Total']>0]
