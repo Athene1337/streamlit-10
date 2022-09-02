@@ -50,9 +50,8 @@ if st.button("Run"):
     plt.title('A nice little graph')
     st.pyplot(fig)
     
-    st.write("Lognormal Parameters:   µ: "+str(mean)+"  ")
-    
-    st.write(r''' $$\mu$$''')
+    st.write("Lognormal Parameters:)
+    st.write(r''' $$\mu$$'''+str(mean))
     
   except:
     st.write("You have to feed me first!")
