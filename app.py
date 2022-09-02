@@ -50,7 +50,7 @@ if st.button("Run"):
     plt.title('A nice little graph')
     st.pyplot(fig)
     
-    st.write("Lognormal Parameters:)
+    st.write("Lognormal Parameters:")
     st.write(r''' $$\mu$$'''+str(mean))
     
   except:
