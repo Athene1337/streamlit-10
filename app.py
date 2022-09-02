@@ -48,3 +48,5 @@ if st.button("Run"):
     #plt.legend(['Fit','Data'])
     #plt.title('A nice little graph')
     #st.pyplot(fig)
+  except:
+    st.write("You have to feed me first!")
