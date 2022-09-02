@@ -52,5 +52,7 @@ if st.button("Run"):
     
     st.write("Lognormal Parameters:   µ: "+str(mean)+"  ")
     
+    st.write(r''' $$/mu$$)
+    
   except:
     st.write("You have to feed me first!")
