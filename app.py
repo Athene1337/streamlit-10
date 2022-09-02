@@ -4,7 +4,7 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.set_page_config(page_title="Excel Plotter")
+st.set_page_config(page_title="Nathan's Frontend Prototype1")
 st.title("Excel Plotter")
 st.subheader("I'm hungry, feed me an Excel file!")
 
@@ -52,7 +52,7 @@ if st.button("Run"):
     
     st.write("Lognormal Parameters:   µ: "+str(mean)+"  ")
     
-    st.write(r''' $$/mu$$''')
+    st.write(r''' $$\mu$$''')
     
   except:
     st.write("You have to feed me first!")
