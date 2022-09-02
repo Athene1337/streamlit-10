@@ -15,7 +15,7 @@ if ExcelFile:
   st.dataframe(df)
 
 if st.button("Run"):
-  try:
+#  try:
     #df['Total'] = df['Paid Indem'] + df['Paid Expense'] + df['OS Indem'] + df['OS Expense']
     #df0 = df[df['Total']>0]
     #LogLosses = np.array(np.log10(df0['Total']))
@@ -48,5 +48,5 @@ if st.button("Run"):
     #plt.legend(['Fit','Data'])
     #plt.title('A nice little graph')
     #st.pyplot(fig)
-  except:
-    st.write("You have to feed me first!")
+#  except:
+#    st.write("You have to feed me first!")
