@@ -13,6 +13,9 @@ if ExcelFile:
   st.markdown('---')
   df = pd.read_excel(ExcelFile, engine='openpyxl')
   st.dataframe(df)
+  
+test = st.button("Run")
+st.write(test)
 
 #if st.button("Run"):
 #  try:
